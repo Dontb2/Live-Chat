@@ -1,0 +1,57 @@
+    /* Enhanced responsive design */
+    :root {
+        --chat-width: min(400px, 90vw);
+        --input-width: min(240px, 70vw);
+    }
+
+    body {
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(45deg, blue, violet);
+        background-size: 300% 300%;
+        animation: color 12s ease-in-out infinite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    /* Rest of original styles remain... */
+
+    #chatbox {
+        width: var(--chat-width);
+        height: 300px;
+        /* Rest of original styles remain... */
+    }
+
+    .input-container {
+        width: var(--chat-width);
+        /* Rest of original styles remain... */
+    }
+
+    #msg {
+        width: var(--input-width);
+        /* Rest of original styles remain... */
+    }
+
+    /* Touch-friendly button sizes */
+    button {
+        min-width: 60px;
+        padding: 12px 24px;
+        /* Rest of original styles remain... */
+    }
+
+    /* Mobile-specific adjustments */
+    @media (max-width: 480px) {
+        .header {
+            font-size: 1.5rem;
+        }
+        
+        button {
+            padding: 10px 15px;
+            font-size: 14px;
+        }
+    }
